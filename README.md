@@ -1,6 +1,6 @@
 # oriajsan.github.io
 
-Portfólio de Jairo de S. Dantas e páginas do app Grana, publicados com GitHub Pages.
+Portfólio de Jairo Santana e páginas do app Grana, publicados com GitHub Pages.
 
 - `/` — portfólio
 - `/grana/` — página do Grana
