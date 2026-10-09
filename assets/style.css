@@ -1,0 +1,313 @@
+/* Shared by the portfolio and the project pages. A page picks its accent by
+   setting --accent on <body>; everything else follows from the tokens. */
+
+:root {
+  --bg: #f6f8f9;
+  --surface: #ffffff;
+  --surface-2: #eef2f4;
+  --text: #13191c;
+  --muted: #55636a;
+  --border: #dbe2e6;
+  --accent: #2f6fb8;
+  --accent-ink: #ffffff;
+  --radius: 14px;
+  --max: 920px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1214;
+    --surface: #151b1e;
+    --surface-2: #1c2427;
+    --text: #e3e8ea;
+    --muted: #9aa8ae;
+    --border: #263035;
+    --accent: #6aa5e8;
+    --accent-ink: #08131c;
+    color-scheme: dark;
+  }
+}
+
+body.grana {
+  --accent: #00875a;
+  --accent-ink: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.grana {
+    --accent: #00e294;
+    --accent-ink: #003822;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+a:hover { text-decoration-thickness: 2px; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---- Header ---- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a:hover { color: var(--text); }
+
+/* ---- Sections ---- */
+
+main section { padding: 56px 0; }
+main section + section { border-top: 1px solid var(--border); }
+
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 12px; }
+h1 { font-size: clamp(34px, 6vw, 52px); }
+h2 { font-size: 26px; }
+h3 { font-size: 19px; }
+
+p { margin: 0 0 14px; }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--muted);
+  max-width: 640px;
+}
+
+.muted { color: var(--muted); }
+
+/* ---- Hero ---- */
+
+.hero { padding-top: 72px; }
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.app-icon {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.button svg { width: 18px; height: 18px; }
+
+/* ---- Chips ---- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+}
+
+.chips li {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---- Cards ---- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.card p { color: var(--muted); font-size: 15px; margin: 0; }
+.card .chips { margin-top: auto; padding-top: 8px; }
+.card .chips li { font-size: 13px; padding: 2px 10px; }
+
+.card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card.featured img {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+}
+
+.card .links { display: flex; flex-wrap: wrap; gap: 16px; font-size: 15px; }
+
+@media (max-width: 560px) {
+  .card.featured { flex-direction: column; }
+}
+
+/* ---- Feature list (project page) ---- */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.features div {
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.features h3 { font-size: 17px; margin-bottom: 6px; }
+.features p { color: var(--muted); font-size: 15px; margin: 0; }
+
+/* ---- Long-form text (privacy policy) ---- */
+
+.prose { max-width: 700px; }
+.prose h2 { font-size: 21px; margin-top: 36px; }
+.prose ul { padding-left: 22px; margin: 0 0 14px; }
+.prose li { margin-bottom: 6px; }
+.prose code {
+  font-size: 0.9em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--surface-2);
+}
+
+/* ---- Footer ---- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0 40px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-footer a { color: var(--muted); }
+
+/* ---- Timeline (experience) ---- */
+
+.timeline { display: grid; gap: 28px; margin-top: 24px; }
+
+.timeline article {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 16px;
+}
+
+.timeline .when { color: var(--muted); font-size: 15px; padding-top: 2px; }
+.timeline ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 16px; }
+.timeline li { margin-bottom: 4px; }
+
+@media (max-width: 560px) {
+  .timeline article { grid-template-columns: 1fr; gap: 4px; }
+}
