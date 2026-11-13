@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grana · Finanças pessoais para Android</title>
+  <title>Grana · Finanças pessoais para Android e web</title>
   <meta name="description" content="O Grana mostra quanto você pode gastar hoje, depois de pagar as contas do mês. Offline, sem cadastro, com os dados no seu celular.">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="../assets/style.css">
@@ -25,7 +25,7 @@
         <div class="hero-row">
           <img class="app-icon" src="../assets/grana-icon.png" alt="Ícone do Grana" width="88" height="88">
           <div>
-            <span class="eyebrow">App Android · em testes</span>
+            <span class="eyebrow">Android e web · em testes</span>
             <h1>Saiba quanto você pode gastar.</h1>
           </div>
         </div>
@@ -36,10 +36,20 @@
         <p class="lead">
           Funciona sem internet e sem cadastro. Seus dados ficam no seu celular.
         </p>
+        <!--
+          Regra: estes links apontam sempre para a versão mais recente, nunca para
+          uma versão específica. O APK vem da release "latest" deste repositório
+          (publicada por `npm run build:announce` no repositório do app); a versão
+          web é o endereço fixo do PWA.
+        -->
         <div class="actions">
-          <a class="button primary" href="mailto:jairosd01101@gmail.com?subject=Grana">Quero testar</a>
-          <a class="button" href="privacidade.html">Política de Privacidade</a>
+          <a class="button primary" href="https://github.com/oriajsan/oriajsan.github.io/releases/latest/download/grana.apk">Baixar para Android</a>
+          <a class="button" href="https://grana-b8e.pages.dev">Usar a versão web</a>
         </div>
+        <p class="lead">
+          No Android, abra o arquivo baixado e permita a instalação. No iPhone, abra a versão
+          web no Safari e use Compartilhar → Adicionar à Tela de Início.
+        </p>
       </div>
     </section>
 
@@ -69,7 +79,7 @@
           </div>
           <div>
             <h3>Backup</h3>
-            <p>Exporte seus dados quando quiser. Em breve, backup automático no seu Google Drive.</p>
+            <p>Exporte seus dados quando quiser, ou ative o backup automático no seu Google Drive.</p>
           </div>
         </div>
       </div>
