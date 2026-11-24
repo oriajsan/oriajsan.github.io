@@ -1,0 +1,33 @@
+{
+  "updatedAt": "2026-11-24",
+  "projects": [
+    {
+      "id": "flipdesk",
+      "commits": 775,
+      "pullRequests": 281,
+      "weeks": null,
+      "lastActivity": "2026-10-31"
+    },
+    {
+      "id": "garfo",
+      "commits": 143,
+      "pullRequests": 11,
+      "weeks": { "2026-11-09": 140, "2026-11-23": 3 },
+      "lastActivity": "2026-11-24"
+    },
+    {
+      "id": "grana",
+      "commits": 181,
+      "pullRequests": 45,
+      "weeks": null,
+      "lastActivity": "2026-10-31"
+    },
+    {
+      "id": "siehp",
+      "commits": 44,
+      "pullRequests": 19,
+      "weeks": { "2024-01-22": 1, "2024-04-22": 5, "2024-04-29": 1, "2024-05-06": 2, "2024-05-20": 1, "2025-01-13": 2, "2025-01-20": 1, "2025-03-10": 1, "2025-03-17": 17, "2025-03-24": 5, "2025-03-31": 4, "2025-04-07": 3, "2025-06-02": 1 },
+      "lastActivity": "2025-06-08"
+    }
+  ]
+}

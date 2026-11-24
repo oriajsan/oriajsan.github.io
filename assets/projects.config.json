@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "id": "flipdesk",
+      "name": "FlipDesk",
+      "kind": "Experiência profissional",
+      "desc": "Plataforma de atendimento e CRM com foco em WhatsApp, em produção. Trabalho em integrações, automações, campanhas em massa e correções de segurança.",
+      "period": "abr 2025 – atual",
+      "ongoing": true,
+      "stack": "Ruby on Rails, Vue.js, PostgreSQL, Redis, Sidekiq",
+      "links": [["Ver na lista", "#flipdesk"]],
+      "repos": ["FlipDesk-Company/Flipdesk-application"]
+    },
+    {
+      "id": "garfo",
+      "name": "Garfo",
+      "kind": "Projeto pessoal",
+      "desc": "Agente de IA que entende pedidos em português e monta o carrinho, com busca híbrida no PostgreSQL e uma suíte de avaliação automatizada.",
+      "period": "nov 2026",
+      "ongoing": false,
+      "stack": "NestJS, Next.js, TypeScript, PostgreSQL + pgvector, Docker",
+      "links": [["Testar a demo", "https://garfo-ai.vercel.app"], ["Ver no GitHub", "https://github.com/oriajsan/Garfo-AI"]],
+      "repos": ["oriajsan/Garfo-AI"],
+      "freqNote": "O histórico passou por um rebase, então quase todos os commits caem na mesma semana."
+    },
+    {
+      "id": "grana",
+      "name": "Grana",
+      "kind": "Projeto pessoal",
+      "desc": "App Android de finanças pessoais que mostra quanto você pode gastar hoje, depois de pagar as contas do mês. Funciona offline e sem cadastro.",
+      "period": "jul – out 2026",
+      "ongoing": false,
+      "stack": "React Native, Expo, TypeScript, SQLite",
+      "links": [["Conhecer o Grana", "grana/"]],
+      "repos": ["oriajsan/Grana"]
+    },
+    {
+      "id": "siehp",
+      "name": "SIEHP",
+      "kind": "Projeto acadêmico",
+      "desc": "Sistema de ensino de histologia e patologia da UFS, feito em equipe. Atuei em requisitos, arquitetura e desenvolvimento full stack.",
+      "period": "jan 2024 – jun 2025",
+      "ongoing": false,
+      "stack": "React, TypeScript, Node.js, Docker",
+      "links": [["Front-end no GitHub", "https://github.com/SIEHP/siehp-webapp"], ["API no GitHub", "https://github.com/SIEHP/siehp-api"]],
+      "repos": ["SIEHP/siehp-webapp", "SIEHP/siehp-api"],
+      "allBranches": true
+    }
+  ]
+}

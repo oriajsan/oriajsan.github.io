@@ -1,0 +1,40 @@
+name: Estatísticas do GitHub
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gerar assets/stats.json
+        run: node scripts/build-stats.mjs
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+
+      - name: Commit se mudou
+        run: |
+          if git diff --quiet -- assets/stats.json; then
+            echo "stats.json não mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.json
+          git commit -m "chore: atualiza estatísticas do GitHub"
+          git push
