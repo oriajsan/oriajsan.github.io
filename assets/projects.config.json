@@ -3,48 +3,116 @@
     {
       "id": "flipdesk",
       "name": "FlipDesk",
-      "kind": "Experiência profissional",
-      "desc": "Plataforma de atendimento e CRM com foco em WhatsApp, em produção. Trabalho em integrações, automações, campanhas em massa e correções de segurança.",
-      "period": "abr 2025 – atual",
+      "kind": { "pt-BR": "Experiência profissional", "en": "Professional experience" },
+      "category": "work",
+      "role": { "pt-BR": "Desenvolvedor Full Stack", "en": "Full Stack Developer" },
+      "desc": {
+        "pt-BR": "Plataforma de atendimento e CRM com foco em WhatsApp, em produção. Trabalho em integrações, automações, campanhas em massa e correções de segurança.",
+        "en": "Customer service and CRM platform focused on WhatsApp, running in production. I work on integrations, automations, bulk campaigns and security fixes."
+      },
+      "period": { "pt-BR": "abr 2025 – atual", "en": "Apr 2025 – present" },
       "ongoing": true,
       "stack": "Ruby on Rails, Vue.js, PostgreSQL, Redis, Sidekiq",
-      "links": [["Ver na lista", "#flipdesk"]],
+      "links": [[{ "pt-BR": "Ver na lista", "en": "See in the list" }, "#flipdesk"]],
       "repos": ["FlipDesk-Company/Flipdesk-application"]
     },
     {
       "id": "garfo",
       "name": "Garfo",
-      "kind": "Projeto pessoal",
-      "desc": "Agente de IA que entende pedidos em português e monta o carrinho, com busca híbrida no PostgreSQL e uma suíte de avaliação automatizada.",
-      "period": "nov 2026",
+      "kind": { "pt-BR": "Projeto pessoal", "en": "Personal project" },
+      "category": "project",
+      "desc": {
+        "pt-BR": "Agente de IA que entende pedidos em português e monta o carrinho, com busca híbrida no PostgreSQL e uma suíte de avaliação automatizada.",
+        "en": "AI agent that understands orders written in Portuguese and builds the cart, with hybrid search in PostgreSQL and an automated evaluation suite."
+      },
+      "period": { "pt-BR": "nov 2026", "en": "Nov 2026" },
       "ongoing": false,
       "stack": "NestJS, Next.js, TypeScript, PostgreSQL + pgvector, Docker",
-      "links": [["Testar a demo", "https://garfo-ai.vercel.app"], ["Ver no GitHub", "https://github.com/oriajsan/Garfo-AI"]],
+      "links": [
+        [{ "pt-BR": "Testar a demo", "en": "Try the demo" }, "https://garfo-ai.vercel.app"],
+        [{ "pt-BR": "Ver no GitHub", "en": "View on GitHub" }, "https://github.com/oriajsan/Garfo-AI"]
+      ],
+      "image": "assets/projects/garfo.png",
+      "imageAlt": { "pt-BR": "Captura de tela do Garfo", "en": "Screenshot of Garfo" },
       "repos": ["oriajsan/Garfo-AI"],
-      "freqNote": "O histórico passou por um rebase, então quase todos os commits caem na mesma semana."
+      "freqNote": {
+        "pt-BR": "O histórico passou por um rebase, então quase todos os commits caem na mesma semana.",
+        "en": "The history was rebased, so almost every commit falls in the same week."
+      }
     },
     {
       "id": "grana",
       "name": "Grana",
-      "kind": "Projeto pessoal",
-      "desc": "App Android de finanças pessoais que mostra quanto você pode gastar hoje, depois de pagar as contas do mês. Funciona offline e sem cadastro.",
-      "period": "jul – out 2026",
+      "kind": { "pt-BR": "Projeto pessoal", "en": "Personal project" },
+      "category": "project",
+      "desc": {
+        "pt-BR": "App Android de finanças pessoais que mostra quanto você pode gastar hoje, depois de pagar as contas do mês. Funciona offline e sem cadastro.",
+        "en": "Personal finance Android app that shows how much you can spend today, after paying the month's bills. Works offline, with no sign-up."
+      },
+      "period": { "pt-BR": "jul – out 2026", "en": "Jul – Oct 2026" },
       "ongoing": false,
       "stack": "React Native, Expo, TypeScript, SQLite",
-      "links": [["Conhecer o Grana", "grana/"]],
+      "links": [[{ "pt-BR": "Conhecer o Grana", "en": "About Grana (page in Portuguese)" }, "grana/"]],
+      "image": "assets/projects/grana.png",
+      "imageAlt": { "pt-BR": "Captura de tela do Grana", "en": "Screenshot of Grana" },
       "repos": ["oriajsan/Grana"]
     },
     {
       "id": "siehp",
       "name": "SIEHP",
-      "kind": "Projeto acadêmico",
-      "desc": "Sistema de ensino de histologia e patologia da UFS, feito em equipe. Atuei em requisitos, arquitetura e desenvolvimento full stack.",
-      "period": "jan 2024 – jun 2025",
+      "kind": { "pt-BR": "Projeto acadêmico", "en": "Academic project" },
+      "category": "project",
+      "desc": {
+        "pt-BR": "Sistema de ensino de histologia e patologia da UFS, feito em equipe. Atuei em requisitos, arquitetura e desenvolvimento full stack.",
+        "en": "Histology and pathology teaching system for the Federal University of Sergipe, built as a team. I worked on requirements, architecture and full stack development."
+      },
+      "period": { "pt-BR": "jun 2023 – jun 2025", "en": "Jun 2023 – Jun 2025" },
       "ongoing": false,
       "stack": "React, TypeScript, Node.js, Docker",
-      "links": [["Front-end no GitHub", "https://github.com/SIEHP/siehp-webapp"], ["API no GitHub", "https://github.com/SIEHP/siehp-api"]],
+      "links": [
+        [{ "pt-BR": "Front-end no GitHub", "en": "Front end on GitHub" }, "https://github.com/SIEHP/siehp-webapp"],
+        [{ "pt-BR": "API no GitHub", "en": "API on GitHub" }, "https://github.com/SIEHP/siehp-api"]
+      ],
+      "image": "assets/projects/siehp.png",
+      "imageAlt": { "pt-BR": "Captura de tela do SIEHP", "en": "Screenshot of SIEHP" },
       "repos": ["SIEHP/siehp-webapp", "SIEHP/siehp-api"],
       "allBranches": true
+    }
+  ],
+
+  "experience": [
+    {
+      "id": "mserv",
+      "role": { "pt-BR": "Desenvolvedor Salesforce (estágio)", "en": "Salesforce Developer (internship)" },
+      "org": "MServ Tecnologia da Informação",
+      "period": { "pt-BR": "mar 2023 – jan 2025", "en": "Mar 2023 – Jan 2025" },
+      "mode": { "pt-BR": "Remoto", "en": "Remote" },
+      "note": { "pt-BR": "Clientes: Ticket e Pluxee", "en": "Clients: Ticket and Pluxee" },
+      "desc": {
+        "pt-BR": "Atendi dois clientes enterprise do setor de benefícios em paralelo, transformando regras de negócio em automações com Flows, Apex e Lightning Web Components.",
+        "en": "Worked with two enterprise clients in the employee benefits sector at the same time, turning business rules into automations with Flows, Apex and Lightning Web Components."
+      }
+    },
+    {
+      "id": "prodap",
+      "role": { "pt-BR": "Bolsista PRODAP · Apoio ao Serviço de Informática", "en": "PRODAP scholarship · IT support" },
+      "org": { "pt-BR": "Universidade Federal de Sergipe (CCAA)", "en": "Federal University of Sergipe (CCAA)" },
+      "period": { "pt-BR": "jun 2023 – jan 2024", "en": "Jun 2023 – Jan 2024" },
+      "mode": { "pt-BR": "Presencial, São Cristóvão (SE)", "en": "On-site, São Cristóvão, Brazil" },
+      "desc": {
+        "pt-BR": "Dei suporte aos usuários do laboratório de informática do Centro de Ciências Agrárias Aplicadas: diagnóstico de hardware e instalação de equipamentos e software.",
+        "en": "Supported users of the computer lab at the Center for Applied Agricultural Sciences: hardware troubleshooting and installing equipment and software."
+      }
+    }
+  ],
+
+  "education": [
+    {
+      "id": "ufs",
+      "degree": { "pt-BR": "Bacharelado em Engenharia da Computação", "en": "Bachelor's degree in Computer Engineering" },
+      "org": { "pt-BR": "Universidade Federal de Sergipe", "en": "Federal University of Sergipe" },
+      "period": { "pt-BR": "ago 2021 – atual", "en": "Aug 2021 – present" },
+      "note": { "pt-BR": "Previsão de formatura em 2028", "en": "Expected to graduate in 2028" }
     }
   ]
 }
