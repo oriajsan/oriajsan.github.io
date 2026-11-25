@@ -7,10 +7,10 @@
       "category": "work",
       "role": { "pt-BR": "Desenvolvedor Full Stack", "en": "Full Stack Developer" },
       "desc": {
-        "pt-BR": "Plataforma de atendimento e CRM com foco em WhatsApp, em produção. Trabalho em integrações, automações, campanhas em massa e correções de segurança.",
-        "en": "Customer service and CRM platform focused on WhatsApp, running in production. I work on integrations, automations, bulk campaigns and security fixes."
+        "pt-BR": "Plataforma de atendimento e CRM com foco em WhatsApp, em produção. Trabalho em integrações, automações, campanhas em massa e correções de segurança. Deixei a paginação de mensagens 32x mais rápida e corrigi um bug que deixava mensagens inacessíveis. Reduzi de 1.103 para 4 as consultas da verificação de anexos, eliminando um N+1.",
+        "en": "Customer service and CRM platform focused on WhatsApp, running in production. I work on integrations, automations, bulk campaigns and security fixes. Made message pagination 32x faster and fixed a bug that left messages inaccessible. Cut attachment-check queries from 1,103 to 4 by removing an N+1 query."
       },
-      "period": { "pt-BR": "abr 2025 – atual", "en": "Apr 2025 – present" },
+      "period": { "pt-BR": "mar 2025 – atual", "en": "Mar 2025 – present" },
       "ongoing": true,
       "stack": "Ruby on Rails, Vue.js, PostgreSQL, Redis, Sidekiq",
       "links": [[{ "pt-BR": "Ver na lista", "en": "See in the list" }, "#flipdesk"]],
@@ -63,10 +63,10 @@
       "kind": { "pt-BR": "Projeto acadêmico", "en": "Academic project" },
       "category": "project",
       "desc": {
-        "pt-BR": "Sistema de ensino de histologia e patologia da UFS, feito em equipe. Atuei em requisitos, arquitetura e desenvolvimento full stack.",
-        "en": "Histology and pathology teaching system for the Federal University of Sergipe, built as a team. I worked on requirements, architecture and full stack development."
+        "pt-BR": "Sistema Integrado de Ensino à Histologia e Patologia, da UFS, feito em equipe. Atuei em requisitos, arquitetura e desenvolvimento full stack.",
+        "en": "Sistema Integrado de Ensino à Histologia e Patologia (Integrated System for Teaching Histology and Pathology), at the Federal University of Sergipe, built as a team. I worked on requirements, architecture and full stack development."
       },
-      "period": { "pt-BR": "jun 2023 – jun 2025", "en": "Jun 2023 – Jun 2025" },
+      "period": { "pt-BR": "jul 2023 – fev 2026", "en": "Jul 2023 – Feb 2026" },
       "ongoing": false,
       "stack": "React, TypeScript, Node.js, Docker",
       "links": [
@@ -85,7 +85,7 @@
       "id": "mserv",
       "role": { "pt-BR": "Desenvolvedor Salesforce (estágio)", "en": "Salesforce Developer (internship)" },
       "org": "MServ Tecnologia da Informação",
-      "period": { "pt-BR": "mar 2023 – jan 2025", "en": "Mar 2023 – Jan 2025" },
+      "period": { "pt-BR": "set 2023 – jan 2025", "en": "Sep 2023 – Jan 2025" },
       "mode": { "pt-BR": "Remoto", "en": "Remote" },
       "note": { "pt-BR": "Clientes: Ticket e Pluxee", "en": "Clients: Ticket and Pluxee" },
       "desc": {
