@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "projects": [
     {
       "id": "flipdesk",
       "commits": 795,
-      "pullRequests": 298,
+      "pullRequests": 299,
       "weeks": {
         "2025-04-28": 4,
         "2025-05-05": 5,
@@ -94,15 +94,17 @@
     },
     {
       "id": "grana",
-      "commits": 181,
-      "pullRequests": 46,
+      "commits": 189,
+      "pullRequests": 48,
       "weeks": {
         "2026-07-13": 1,
         "2026-08-24": 51,
         "2026-10-05": 29,
-        "2026-10-12": 100
+        "2026-10-12": 101,
+        "2026-11-09": 1,
+        "2026-11-23": 6
       },
-      "lastActivity": "2026-10-17"
+      "lastActivity": "2026-11-25"
     },
     {
       "id": "siehp",
