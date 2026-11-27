@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "projects": [
     {
       "id": "flipdesk",
       "commits": 795,
-      "pullRequests": 303,
+      "pullRequests": 305,
       "weeks": {
         "2025-04-28": 4,
         "2025-05-05": 5,
